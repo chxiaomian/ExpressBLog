@@ -26,4 +26,9 @@ router.get("/test", function (req, res, next) {
         })
     })
 })
+
+router.get('/ip',function (req,res,next) {
+    console.log(req.params)
+    return res.json(req.address);
+})
 module.exports = router;
